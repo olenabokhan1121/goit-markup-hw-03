@@ -28,6 +28,30 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+.benefits-container,
+.team-section-container,
+.portfolio-section-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ================ HEADER STYLES ================ */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -95,9 +119,19 @@ a {
 }
 /* ================ HERO STYLES ================ */
 .hero-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2e2f42;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .main-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -107,12 +141,23 @@ a {
 }
 
 .order-service-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  flex-direction: row;
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .order-service-btn:hover,
@@ -121,12 +166,22 @@ a {
 }
 
 /* ================ OUR BENEFITS STYLE ================ */
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .benefits-list-text {
   line-height: 1.5;
@@ -143,8 +198,25 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-section-list {
+  display: flex;
+  column-gap: 24px;
+}
+.fullname-text-container {
+  padding: 32px 0;
+}
+.team-section-avatar {
+  border: 1px solid #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: url("path_to_image");
 }
 .team-section-item {
+  width: calc((100% -3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
 
@@ -155,6 +227,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-section-text {
   line-height: 1.5;
@@ -167,6 +240,19 @@ a {
   background: #f4f4fd;
 }
 /* ================ OUR PORTFOLIO STYLE ================ */
+.portfolio-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-list-title-text-container {
+  padding: 32px 0 32px 16px;
+}
+.portfolio-section-item {
+  width: calc((100% - 2 * 24px) / 3);
+  border: 1px solid #e7e9fc;
+}
 .portfolio-section-list-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -179,20 +265,26 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /* ================ FOOTER STYLES ================ */
 .page-footer {
   background-color: #2e2f42;
 }
+.footer-container {
+  padding: 100px 0;
+}
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
