@@ -252,6 +252,7 @@ img {
 .portfolio-list-title-text-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-section-item {
   width: calc((100% - 2 * 24px) / 3);
