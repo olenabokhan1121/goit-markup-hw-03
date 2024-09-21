@@ -210,11 +210,7 @@ img {
 .fullname-text-container {
   padding: 32px 0;
 }
-.team-section-avatar {
-  border: 1px solid #000;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: url("path_to_image");
-}
+
 .team-section-item {
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
